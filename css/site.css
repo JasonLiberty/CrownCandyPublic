@@ -1,0 +1,31 @@
+* {
+	box-sizing:border-box;
+}
+
+.top-logo {
+	text-align: center;
+}
+
+
+/* .hours {
+	
+	font-size: 18px;
+} */
+.hours {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.hourslist {
+	list-style-type: none;
+} 
+
+.genericText {
+	font-family: sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+}
+
+
+
