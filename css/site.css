@@ -29,6 +29,7 @@
 
 .contactInfo {
 	background-color: #D6EEEE;
+
 }
 
 
@@ -47,7 +48,60 @@
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration:none
-
-
-
 }
+.tableCaption{
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: large;
+	padding-top: 14px;
+}
+
+.contactInfo{
+	border: 1px solid black;
+	border-radius: 10px;
+
+	color:#0b1111;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+	color:#070707; /*font color */
+	background-color: #f7f7e9;
+	width: 100%;
+	font-weight: bold;
+}
+
+.contactDetail{
+	border: 1px solid black;
+	border-radius: 10px;
+	display: inline;
+	color:#D6EEEE;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration:none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: #2196F3;
+	padding: 10px;
+  }
+  
+  .grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+  }
+
+  .pictureCaption{
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: large;
+	padding-top: 14px;
+  }
