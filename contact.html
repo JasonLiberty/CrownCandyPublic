@@ -4,8 +4,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
+        <link rel="resets" href="css\reset.css">
         <link rel="stylesheet" href="css/bootstrap.css">        
         <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css\contact.css">
         <title>Crown Candy Kitchen</title>
 
       <p class="top-logo">   
@@ -37,18 +39,52 @@
     
     <table class="contactInfo">
      <tr>
-        <td class="'contactDetail">Address</th>
-        <td class="'contactDetail">Main Phone</th>
-        <td class="'contactDetail">Email</th>
+        <td class="contactTitle">Address</th>
+        <td class="contactTitle">Main Phone</th>
+        <td class="contactTitle">Email</th>
       </tr>
       <tr>
-        <td class="'contactDetail">1401 St Louis Ave.<br> St Louis, MO 63106</td>
-        <td class="'contactDetail">   314.621.9650   </td>
-        <td class="'contactDetail">CandyShow@thisemail.com</td>
+        <td class="contactDetail">1401 St Louis Ave.<br> St Louis, MO 63106</td>
+        <td class="contactDetail">   314.621.9650   </td>
+        <td class="contactDetail">CandyShow@thisemail.com</td>
       </tr>
     </table>
 
+    <main id="main">
+      <h1>Contact Us</h1>
+      <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+          <fieldset>
+              <legend>Contact Information</legend>
+              <p class="contactDetail">
+                  <label for="nameField">*Your name: </label>
+                  <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
+              </p>
+              <p class="contactDetail">
+                  <label for="customerEmail">Your email: </label>
+                  <input type="email" name="customerEmail" id="customerEmail">
+              </p>
+              <p><label for="customerPhone">Your phone: </label>
+                  <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone"></p>
+              <p class="contactDetail">
+                  <label>Phone type: </label>
+              
 
+              <label><input type="radio" name="phoneType" value="cell">Cell</label>
+              <label><input type="radio" name="phoneType" value="work">Work</label>
+              <label><input type="radio" name="phoneType" value="home">Home</label>
+              
+                  Ok to contact me:
+                  <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+                  <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+
+              </p>
+          </fieldset>
+
+          <input type="hidden" name="source" value="ContactForm">
+
+          <input type="submit" value="SendContact">
+      </form>
+  </main>
 
 	</body>
     </html>
