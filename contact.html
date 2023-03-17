@@ -4,10 +4,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <link rel="resets" href="css\reset.css">
+        <link rel="resets" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.css">        
         <link rel="stylesheet" href="css/site.css">
-        <link rel="stylesheet" href="css\contact.css">
+        <link rel="stylesheet" href="css/contact.css">
         <title>Crown Candy Kitchen</title>
 
       <p class="top-logo">   
@@ -49,9 +49,9 @@
         <td class="contactDetail">CandyShow@thisemail.com</td>
       </tr>
     </table>
-<!-- delete this -->
+
     <main id="main">
-      <h1>Contact Us</h1>
+      <!-- <h1>Contact Us</h1> -->
       <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
           <fieldset>
               <legend>Contact Information</legend>
@@ -63,8 +63,9 @@
                   <label for="customerEmail">Your email: </label>
                   <input type="email" name="customerEmail" id="customerEmail">
               </p>
-              <p><label for="customerPhone">Your phone: </label>
+              <p class="contactDetail"> <label for="customerPhone">Your phone: </label>
                   <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone"></p>
+
               <p class="contactDetail">
                   <label>Phone type: </label>
               

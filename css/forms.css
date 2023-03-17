@@ -1,0 +1,25 @@
+.flex-container {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: auto;
+  }
+
+.form-group{
+    font-weight:bold;
+}
+
+.form-check{
+    font-size:smaller;
+    font-weight: bold;
+    padding-bottom:10px;
+    margin-left: 20px;
+    
+}
+
+.button-checkbox{
+    font-size:smaller;
+    font-weight: bold;
+    padding-bottom:10px;
+    margin-left: 25px;
+}
