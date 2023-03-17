@@ -1,91 +1,100 @@
 <!DOCTYPE html>
-    <html lang="en-US">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en-US">
 
-        <link rel="resets" href="css/reset.css">
-        <link rel="stylesheet" href="css/bootstrap.css">        
-        <link rel="stylesheet" href="css/site.css">
-        <link rel="stylesheet" href="css/contact.css">
-        <title>Crown Candy Kitchen</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-      <p class="top-logo">   
-        <img src="images\crownlogo.png" alt="Crown Candy Kitchen Logo" />
-      </p>   
-	  
-      <ul class="navMenu">
-        <li class="navMenuItem"><a href="index.html">Home</a></li>
-        <li class="navMenuItem"><a href="contact.html">Contact</a></li>
-        <li class="navMenuItem"><a href="products.html">Products</a></li>
-        <li class="navMenuItem"><a href="logon.html">Logon</a></li>
-        <li class="navMenuItem"><a href="registration.html">Registration</a></li>
-      </ul>
+  <link rel="resets" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <title>Crown Candy Kitchen</title>
 
-     <style>
+  <p class="top-logo">
+    <img src="images\crownlogo.png" alt="Crown Candy Kitchen Logo" />
+  </p>
 
-      body {
-          background-image: url("images/HeaderBackground.jpg");
-          background-repeat: repeat;
-          /* background-color: #eeeea1; */
-      } 
+  <ul class="navMenu">
+    <li class="navMenuItem"><a href="index.html">Home</a></li>
+    <li class="navMenuItem"><a href="contact.html">Contact</a></li>
+    <li class="navMenuItem"><a href="products.html">Products</a></li>
+    <li class="navMenuItem"><a href="logon.html">Logon</a></li>
+    <li class="navMenuItem"><a href="registration.html">Registration</a></li>
+  </ul>
 
-     </style> 
-      </head>       
-     
-	<body>
-   
-    <p class="tableCaption">Locate Us in St Louis</p>
-    
-    <table class="contactInfo">
-     <tr>
-        <td class="contactTitle">Address</th>
-        <td class="contactTitle">Main Phone</th>
-        <td class="contactTitle">Email</th>
-      </tr>
-      <tr>
-        <td class="contactDetail">1401 St Louis Ave.<br> St Louis, MO 63106</td>
-        <td class="contactDetail">   314.621.9650   </td>
-        <td class="contactDetail">CandyShow@thisemail.com</td>
-      </tr>
-    </table>
+  <style>
+    body {
+      background-image: url("images/HeaderBackground.jpg");
+      background-repeat: repeat;
 
-    <main id="main">
-      <!-- <h1>Contact Us</h1> -->
-      <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
-          <fieldset>
-              <legend>Contact Information</legend>
-              <p class="contactDetail">
-                  <label for="nameField">*Your name: </label>
-                  <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
-              </p>
-              <p class="contactDetail">
-                  <label for="customerEmail">Your email: </label>
-                  <input type="email" name="customerEmail" id="customerEmail">
-              </p>
-              <p class="contactDetail"> <label for="customerPhone">Your phone: </label>
-                  <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone"></p>
+    }
+  </style>
+</head>
 
-              <p class="contactDetail">
-                  <label>Phone type: </label>
-              
+<body>
 
-              <label><input type="radio" name="phoneType" value="cell">Cell</label>
-              <label><input type="radio" name="phoneType" value="work">Work</label>
-              <label><input type="radio" name="phoneType" value="home">Home</label>
-              
-                  Ok to contact me:
-                  <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
-                  <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+  <p class="tableCaption">Locate Us in St Louis</p>
 
-              </p>
-          </fieldset>
+  <table class="contactInfo">
+    <tr>
+      <td class="contactTitle">Address</th>
+      <td class="contactTitle">Main Phone</th>
+      <td class="contactTitle">Email</th>
+    </tr>
+    <tr>
+      <td class="contactDetail">1401 St Louis Ave.<br> St Louis, MO 63106</td>
+      <td class="contactDetail"> 314.621.9650 </td>
+      <td class="contactDetail">CandyShow@thisemail.com</td>
+    </tr>
+  </table>
 
-          <input type="hidden" name="source" value="ContactForm">
+  <main id="main">
+    <!-- <h1>Contact Us</h1> -->
+    <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+      <fieldset>
+        <dev class="userContact">
+          <legend>Contact Information</legend>
+          <p class="useContactDetail">
+            <label for="nameField">*Your name: </label>
+            <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
+          </p>
+          <p class="userContactDetail">
+            <label for="customerEmail">Your email: </label>
+            <input type="email" name="customerEmail" id="customerEmail">
+          </p>
 
-          <input type="submit" value="SendContact">
-      </form>
+          <p class="userContactDetail"> <label for="customerPhone">Your phone: </label>
+            <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone">
+          </p>
+        </dev>
+
+        <p class="userContactPhone">
+          <dev>
+            <label>Phone type: </label>
+
+
+            <label><input type="radio" name="phoneType" value="cell">Cell</label>
+            <label><input type="radio" name="phoneType" value="work">Work</label>
+            <label><input type="radio" name="phoneType" value="home">Home</label>
+          </dev>
+          <dev>
+        </p>
+        <p class="contactMe">
+          Ok to contact me:
+          <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+          <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+
+        </p>
+        </dev>
+      </fieldset>
+
+      <input type="hidden" name="source" value="ContactForm">
+
+      <input type="submit" value="SendContact">
+    </form>
   </main>
 
-	</body>
-    </html>
+</body>
+
+</html>

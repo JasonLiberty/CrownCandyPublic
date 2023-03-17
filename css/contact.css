@@ -1,37 +1,39 @@
-.tableCaption{
+.tableCaption {
 	text-align: center;
-	font-family: Arial;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	font-size: large;
+	font-size: larger;
 	padding-top: 14px;
 }
 
-.contactInfo{
+.contactInfo {
 	border: 1px solid black;
 	border-radius: 10px;
 
-	color:#0b1111;
+	color: #0b1111;
 	text-align: center;
 	padding: 14px 16px;
-	text-decoration:none;
-	color:#070707; /*font color */
+	text-decoration: none;
+	color: #070707;
+	/*font color */
 	background-color: #f7f7e9;
 	width: 100%;
 	font-weight: bold;
 }
 
-.contactTitle{
+.contactTitle {
 	border: 1px solid black;
 	border-radius: 10px;
-	background-color:antiquewhite;
+	background-color: antiquewhite;
 
 }
-.contactDetail{
+
+.contactDetail {
 	border: 1px solid black;
 	border-radius: 10px;
 
 	padding: 14px 16px;
-	text-decoration:none;
+	text-decoration: none;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -43,50 +45,59 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	}
+}
+
+ .userContact {
+	/* display: flex; */
+	padding-left: 100px;
+	flex-wrap: wrap;
+}  
+
 
 .searchbox {
-    padding: 5px;
-    margin: 10px 10px;
-    width: 200px;
+	padding: 5px;
+	margin: 10px 10px;
+	width: 200px;
 }
 
 .text {
-    width:140px;
-    padding-right:10px;
+	width: 140px;
+	padding-right: 10px;
 }
 
-fieldset{
-    border-color:#0d0d0e;
-    border-width: 3px;
-    border-style:none;
+fieldset {
+	border-color: #0d0d0e;
+	border-width: 3px;
+	border-style: none;
 }
 
-fieldset>legend{
-    color:#0f0f0f;
+fieldset>legend {
+	color: #0f0f0f;
 }
 
 p>label {
-    display:block;
+	display: block;
 }
 
-input[type="email"], 
-input[type="tel"], 
+input[type="email"],
+input[type="tel"],
 textarea {
-    border-radius:7px;
+	border-radius: 7px;
 }
 
-input:valid{
-    border-color:green;
+input:valid {
+	border-color: green;
 }
-input:invalid{
-    border-color:red;
+
+input:invalid {
+	border-color: red;
 }
 
 input:focus:invalid {
-    border-color:black;
+	border-color: black;
 }
+
 input:required,
-textarea:required{
-    border-style:dashed;
+textarea:required {
+	border-style: dashed;
 }
